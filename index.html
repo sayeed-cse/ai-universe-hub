@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Universe Hub</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="container mx-auto text-center">
+        <h1 class="text-5xl my-10">Ai Universe Hub</h1>
+        <button class="btn bg-[#EB5757] text-white">Sort By Date</button>
+    </header>
+    <main class="container mx-auto my-10">
+        <section id="ai-tools-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        </section>
+        <!-- See More button -->
+        <section id="see-more-section" class="text-end my-4 p-8 bg-slate-100">
+            <button onclick="handleSeeMore()" class="btn btn-lg bg-orange-700 text-white">See More</button>
+        </section>
+        <!-- show modal section -->
+        <dialog id="show-details" class="modal">
+        </dialog>
+
+
+    </main>
+    <!-- javascript link -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
